@@ -1,0 +1,80 @@
+body{
+    
+    background-image: url(assets/bg-body.png); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* @keyframes mymove {
+    from {top: 200px; opacity: 0}
+    to {top: 0px; opacity: 1}
+}
+
+div {
+    animation: mymove infinite;
+} */
+
+#page_2 {
+    display: none;
+}
+
+
+#first-card{
+    background-color:black;
+    border-style: dotted;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel_2{
+    background-color: rgb(0 0 0 / 50%);
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.carrossel_2 .container{
+    width: 100%;
+    height: 100%;
+}
+
+.quiz-options{
+    width: 100%;
+}
+
+.quiz-option{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    height: 36px;
+}
+
+.quiz-option div{
+    background-color: orange;
+    border-radius: 20px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quiz-option span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 12px;
+}
+
+#forward_button_control{
+    background: url("icons/forward.png") no-repeat scroll 0 0 transparent;
+    color: #000000;
+    cursor: pointer;
+    font-weight: bold;
+    height: 20px;
+    padding-bottom: 2px;
+    width: 75px;
+}
