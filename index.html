@@ -16,116 +16,155 @@
 <body>
 
 
-    <div class="container-fluid d-flex flex-column"  style="height:100vh;">
-        <div class="container-fluid col-12" style="height:15vh;">
-            <div class="d-flex justify-content-end text-white bg-dark">
-                <div class="p-2">
-                    <h1>PROD</h1>
+    <div class="container-fluid d-flex flex-column" style="height:100vh;">
+        <div class="container-fluid d-flex flex-column" style="height:100vh;">
+            <div class="container-fluid col-12" style="height:15vh;">
+                <div class="d-flex justify-content-end text-white">
+                    <div class="p-2">
+                        <h1 class="header_prod">PROD</h1>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container col-12" style="height:70vh;">
+            <div class="container col-12" style="height:70vh;">
 
-            <!-- Pagina Inicial -->
-            <div id="page_1">
-                <div class="d-flex flex-column align-items-center justify-content-center mb-auto mt-lg-5">
+                <!-- Pagina Inicial -->
+                <div id="page_1">
+                    <div class="d-flex flex-column align-items-center justify-content-center mb-auto mt-lg-5">
 
-                    <div class="d-flex flex-column align-items-center justify-content-center">
-                        <h1 class="text-light bg-dark">Video Interativo</h1>
-                        <h4 class="text-light bg-dark">Layout de Apresentação</h4>
-                    </div>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <h1 class="text-light">Video Interativo</h1>
+                            <h4 class="text-light">Layout de Apresentação</h4>
+                        </div>
 
-                    <div class="d-flex flex-column align-items-center justify-content-center">
-                        <div class="card text-center mb-3" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">Prod Agencia</h5>
-                                <p class="card-text">Lorem ipsum</p>
-                                <h5 class="card-title">Prod Agencia</h5>
-                                <p class="card-text">Lorem ipsum</p>
-                                <a id="iniciar" class="btn btn-primary">Iniciar</a>
+                        <div class="d-flex flex-column align-items-center justify-content-center">
+                            <div id="card_wb" class="card text-center mb-3 align-items-center justify-content-center">
+                                <div class="card_body">
+                                    <h1 class="card-title">Prod Agencia</h5>
+                                        <p class="card-text">Lorem ipsum</p>
+                                        <h1 class="card-title">Prod Agencia</h5>
+                                            <p class="card-text">Lorem ipsum</p>
+                                            <button id="initialize-button" class="rounded-pill"><b>INICIAR</b></button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Carrossel -->
-            <div id="page_2" class="container mt-2 col-md-8">
-                <div class="row mt-8 col-md-12">
-                    <div id="carouselExampleControls" class="carousel slide" data-interval="false">
-                        <div class="carousel-inner">
-                            <div id="carrossel_1" class="carousel-item active">
-                                <video id="video_player" src="assets/v-prod-apresentacao.mp4" class="d-block w-100"></video>
-                            </div>
-                            <div id="carrossel_2" class="carousel-item carrossel_2">
-                                <div class="container d-flex flex-column justify-content-center align-items-center">
-                                    <div id="quiz-options" class="d-flex flex-column quiz-options">
-                                        <div class="m-2 quiz-option">
-                                            <div>A</div>
-                                            <span class="">Prod 1</span>
-                                        </div>
-                                        <div class="m-2 quiz-option">
-                                            <div>A</div>
-                                            <span class="">Prod 1</span>
-                                        </div>
-                                        <div class="m-2 quiz-option">
-                                            <div>A</div>
-                                            <span class="">Prod 1</span>
-                                        </div>
-                                        <div class="m-2 quiz-option">
-                                            <div>A</div>
-                                            <span class="">Prod 1</span>
+                <!-- Carrossel -->
+                <div id="page_2" class="container mt-2 col-md-8">
+                    <div class="row mt-8 col-md-12">
+                        <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+                            <div class="carousel-inner">
+                                <div id="carrossel_1" class="carousel-item active">
+                                    <video id="video_player_1" src="assets/v-prod-apresentacao.mp4"
+                                        class="d-block w-100"></video>
+                                </div>
+                                <div id="carrossel_2" class="carousel-item carrossel_2">
+                                    <div class="container d-flex flex-column justify-content-center align-items-center">
+                                        <div id="quiz-options" class="d-flex flex-column quiz-options">
+                                            <div class="m-2 quiz-option">
+                                                <div>A</div>
+                                                <span class="">Prod</span>
+                                            </div>
+                                            <div class="m-2 quiz-option">
+                                                <div>B</div>
+                                                <span class="">Prod.ag</span>
+                                            </div>
+                                            <div class="m-2 quiz-option">
+                                                <div>C</div>
+                                                <span class="">Agência prod</span>
+                                            </div>
+                                            <div class="m-2 quiz-option">
+                                                <div>D</div>
+                                                <span class="">Todas</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div  id="carrossel_3" class="carousel-item">
-                                <img src="assets/2_.jpeg" class="d-block w-100" alt="...">
+                                <div id="carrossel_3" class="carousel-item">
+                                    <video id="video_player_2" src="assets/v-prod-apresentacao.mp4"
+                                        class="d-block w-100"></video>
+                                </div>
+                                <div id="carrossel_4" class="carousel-item">
+                                    <div id="disclaimer" class="card">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Disclaimer</h5>
+                                          <p class="card-text">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                          </p>
+                                        </div>
+                                      </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
-        </div>
 
-        <div class="container col-12" style="height:15vh;">
-            <div class="row mt-4 col-md-12">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm">
-                            <button class="rounded-circle" type="button"> 
-                                <!-- <img src="icons/home.png"> -->
-                            </button>
-                        </div>
+            <div id="panel_center_control" class="container col-12" style="height:15vh;">
+                <div class="row mt-4 col-md-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-1 col-2">
+                                <button id="go-to-homepage" class="rounded-circle control_button" type="button">
+                                    <img src="icons/home.svg">
+                                </button>
+                            </div>
 
-                        <div class="col-lg-8">
-                            <button class="rounded-pill"> Clique aqui para Assistir em tela cheia </button>
-                        </div>
+                            <div class="col-xxl-9 col-7 ">
+                                <button id="go-fullscreen" class="rounded-pill control_button_video"> Clique aqui para
+                                    Assistir em tela cheia </button>
+                            </div>
 
-                        <div class="col-sm">
-                            <button class="rounded-circle" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
+                            <div class="col-xxl-2 col-3 control_button_action">
+                                <!-- <button class="rounded-circle" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" data-bs-slide="next" > -->
                                 <!-- <img src="icons/back.png"> -->
-                            </button>
-                            <button type="button" >
-                                <!-- <img src="icons/forward.png"> -->
-                            </button>
-                            <input type="button" class="button-forward" value=" Facebook" data-bs-target="#carouselExampleControls" data-bs-slide="next" />
-                            <button id="forward_button_control"></button>
+                                <button id="previous-button" class="rounded-circle control_button"
+                                    href="#carouselExampleControls">
+                                    <img src="icons/previous.svg">
+                                </button>
+                                <button id="next-button" class="rounded-circle control_button"
+                                    href="#carouselExampleControls">
+                                    <img src="icons/next.svg">
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-
-    <!-- <div class="d-flex">
-        <div class="p-2">
-            <img src="assets/prod.png" alt="not_found">
+        <div id="myModal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="d-flex justify-content-end">
+                        <button id="close_modal_button" type="button" class="rounded-circle">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column align-items-center justify-content-center mb-5">
+                            <h4>A alternativa correta é:</h4>
+                        </div>
+                        <div class="m-2 quiz-option">
+                            <div>D</div>
+                            <span class="">Todas</span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <div class="div_modal_span">
+                            <span> Clique no botão <img class="modal-icon-next" src="assets/button-next.png"> para
+                                continuar assistindo à aula </span>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column align-items-center justify-content-center mb-3">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div> -->
 
 
 </body>
